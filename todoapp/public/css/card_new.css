@@ -1,0 +1,12 @@
+.button {
+  color: white;
+  background-color: #5cb85c;
+  width: 40%;
+  line-height: 3;
+  border-radius: 25px;
+  border-style: none;
+  margin: 20px 0;
+}
+.memo {
+  margin-top: 15px;
+}
