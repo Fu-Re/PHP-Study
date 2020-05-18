@@ -1,0 +1,31 @@
+.sec-title{
+    margin-top:1.5%;    
+}
+
+p.content-main{
+    font-size:200%;
+    border-bottom:1px solid #AAA;
+    margin:2% 0;
+}
+
+p.content-sub{
+    font-size:120%;
+    border-bottom:1px solid #AAA;
+    margin:2% 0;
+}
+
+a.edit{
+    display:inline-block;
+    background-color:#337ab7;
+    color:white;
+    width:40%;
+    line-height:3;
+    margin:10px 0;
+    border-radius:10px;
+}
+
+a.delete{
+    display:inline-block;
+    color:#c00;
+    margin:10px 0;
+}

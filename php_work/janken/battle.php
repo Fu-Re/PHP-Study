@@ -7,7 +7,9 @@
 $hand = ["0", "2", "5"];
 $result;
 $player_hand = $_POST["playerHand"];
-$pc_hand = hand[array_rand($hand, 1)]
+
+shuffle($hand);
+$pc_hand = $hand[0];
 ?>
 <!DOCTYPE html>
 <html>
@@ -61,11 +63,31 @@ $pc_hand = hand[array_rand($hand, 1)]
             <p class="result-word"></p>
             <!-- プレイヤーの手を表示しましょう -->
             あなた： <?php
-            echo $player_hand;
+            switch($player_hand){
+                case 0:
+                    echo "ぐー";
+                    break;
+                case 2:
+                    echo "ちょき";
+                    break;
+                case 5:
+                    echo "ぱー";
+                    break;
+            }
             ?><br>
             <!-- コンピュータの手を表示しましょう -->
             コンピューター：<?php
-            echo $pc_hand;
+            switch($pc_hand){
+                case 0:
+                    echo "ぐー";
+                    break;
+                case 2:
+                    echo "ちょき";
+                    break;
+                case 5:
+                    echo "ぱー";
+                    break;
+            }
             ?><br><br>
 
             <p><a class="red" href="index.php">>>もう一回勝負する</a></p>
